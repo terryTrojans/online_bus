@@ -1,3 +1,12 @@
+<?php
+session_start();
+if(!isset($_SESSION['parent_id'])) {
+    header("Location: login_parent.php");
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <!--
 Student Name: Willem Kagisho Terry
@@ -17,7 +26,7 @@ ICT 3715 Project 2023
     <body>
         
         <h2>Bus Registration Form</h2>
-        <form action="Register.php" method="POST">
+        <form action="process_registration.php" method="POST">
             
             <h3>Morning</h3>
             <label for="pick_up_num">Pick Up Number:</label>
@@ -181,25 +190,12 @@ ICT 3715 Project 2023
             <input type="submit" value="Register">
         </form>    
         
-        
-        
-        
-        
+        <br><br>
+        <a href="logout.php"> Logout</a>
+       
         <?php
         // php code comes here 
         ?>
     </body>
+    
 </html>
-
-
-
-
-
-<?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-

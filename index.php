@@ -26,8 +26,9 @@ ICT 3715 Project 2023
         <h2> Admin Login</h2>
         <form action="login.php" method="POST">
             <input type="text" name="username" placeholder="Username" required><br><br>
-            <input type="pasword" name="password" placeholder="Password" required><br><br>
-            <input type="submit" value="Login"><br>
-        </form>  
+            <input type="password" name="password" placeholder="Password" required><br><br>
+            <input type="submit" value="Login">
+        </form> 
+        <a href="login_parent.php"> Parent Login</a>
     </body>
 </html>
