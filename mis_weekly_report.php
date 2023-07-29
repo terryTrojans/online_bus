@@ -70,5 +70,7 @@
         <?php
         $conn->close();
         ?>
+        
+         <br><br><a href="manage_learners.php"> Go back to Manage Learners</a><br><br>
     </body>
 </html>

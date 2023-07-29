@@ -5,6 +5,14 @@
  * 
  * 
  */
+        // ... after succesful registration, parent email      
+        $subject = "Registration Acknowledgement"; 
+        $message = "Dear Parent, \n\nThank you for registering with our online bus registration system. Your registration has been recieved and acknowledged.\n\nKind regards,\nImpumelelo High School";
+        $headers = "From: vokalnc@gmail.com"; // using a valid email address
+        
+        // sent the mail
+        mail($parent_email, $subject, $message, $headers);
+        
 
 // Esteblish a database connection
 $servername = "127.0.0.1";

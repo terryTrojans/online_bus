@@ -22,7 +22,8 @@ if(!isset($_SESSION['admin_id'])) {
     <body>
         <h2> Manage Buses</h2>
         <!-- Display a table with bus data, provide options for adding, editing, or deleting buses -->
+        <a href="mis_bus_route.php">MIS Bus Route Report</a><br><br>
         <a href="dashboard.php"> Go back to Dashboard</a><br><br>
-        <a href="logout.php"> Logout</a>
+        <!-- <a href="logout.php"> Logout</a> one logout on for the Administrator can be found on the dashboard-->
     </body>
 </html>

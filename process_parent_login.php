@@ -50,7 +50,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     $db_password = "Mam3cValk21";
     if($username === $db_username && $password === $db_password){
         $_SESSION['parent_id'] = 1;
-        header("Location: .php");
+        header("Location: register_student.php");
         exit();
     } else {
     

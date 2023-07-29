@@ -41,6 +41,7 @@
             
             <input type="submit" value="Register">
         </form>
+     
         
         <a href="login_parent.php">Go back to Parent Login</a><br><br>
     </body>
